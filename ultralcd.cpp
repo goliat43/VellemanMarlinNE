@@ -848,7 +848,8 @@ static void lcd_load_menu_EXT1_ABS_go()
   enquecommand_P(PSTR("G92 E0"));
   enquecommand_P(PSTR("M83"));
   enquecommand_P(PSTR("G1 E300 F2000"));
-  enquecommand_P(PSTR("G1 E200 F1000"));
+  enquecommand_P(PSTR("G1 E300 F2000"));
+  enquecommand_P(PSTR("G1 E70 F1000"));
   enquecommand_P(PSTR("M117 Feeding filament"));
   enquecommand_P(PSTR("G1 E60 F50"));
   enquecommand_P(PSTR("G28"));
@@ -887,7 +888,8 @@ static void lcd_load_menu_EXT1_PLA_go()
   enquecommand_P(PSTR("G92 E0"));
   enquecommand_P(PSTR("M83"));
   enquecommand_P(PSTR("G1 E300 F2000"));
-  enquecommand_P(PSTR("G1 E200 F1000"));
+  enquecommand_P(PSTR("G1 E300 F2000"));
+  enquecommand_P(PSTR("G1 E70 F1000"));
   enquecommand_P(PSTR("M117 Feeding filament"));
   enquecommand_P(PSTR("G1 E60 F50"));
   enquecommand_P(PSTR("G28"));
@@ -926,7 +928,8 @@ static void lcd_load_menu_EXT2_ABS_go()
   enquecommand_P(PSTR("G92 E0"));
   enquecommand_P(PSTR("M83"));
   enquecommand_P(PSTR("G1 E300 F2000"));
-  enquecommand_P(PSTR("G1 E200 F1000"));
+  enquecommand_P(PSTR("G1 E300 F2000"));
+  enquecommand_P(PSTR("G1 E70 F1000"));
   enquecommand_P(PSTR("M117 Feeding filament"));
   enquecommand_P(PSTR("G1 E60 F50"));
   enquecommand_P(PSTR("G28"));
@@ -965,7 +968,8 @@ static void lcd_load_menu_EXT2_PLA_go()
   enquecommand_P(PSTR("G92 E0"));
   enquecommand_P(PSTR("M83"));
   enquecommand_P(PSTR("G1 E300 F2000"));
-  enquecommand_P(PSTR("G1 E200 F1000"));
+  enquecommand_P(PSTR("G1 E300 F2000"));
+  enquecommand_P(PSTR("G1 E70 F1000"));
   enquecommand_P(PSTR("M117 Feeding filament"));
   enquecommand_P(PSTR("G1 E60 F50"));
   enquecommand_P(PSTR("G28"));
@@ -1007,6 +1011,7 @@ static void lcd_unload_menu_EXT1_ABS()
   enquecommand_P(PSTR("M117 Unloading filament"));
   enquecommand_P(PSTR("G1 E-300 F2000"));
   enquecommand_P(PSTR("G1 E-300 F2000"));
+  enquecommand_P(PSTR("G1 E-200 F2000"));
   enquecommand_P(PSTR("G28"));
   enquecommand_P(PSTR("G90"));
   enquecommand_P(PSTR("M82"));
@@ -1036,6 +1041,7 @@ static void lcd_unload_menu_EXT1_PLA()
   enquecommand_P(PSTR("M117 Unloading filament"));
   enquecommand_P(PSTR("G1 E-300 F2000"));
   enquecommand_P(PSTR("G1 E-300 F2000"));
+  enquecommand_P(PSTR("G1 E-200 F2000"));
   enquecommand_P(PSTR("G28"));
   enquecommand_P(PSTR("G90"));
   enquecommand_P(PSTR("M82"));

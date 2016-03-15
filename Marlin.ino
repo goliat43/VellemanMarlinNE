@@ -74,12 +74,12 @@
 // Please note these can be 20 characters!
 
         #define MSG_SPLASH_NAME " VERTEX  3D PRINTER"
-        #define MSG_SPLASH_FIRMWARE "M:1.0 V:1.4 HEADS:1"
+        #define MSG_SPLASH_FIRMWARE "M:1.0 V:1.4 NE:1"
         #define MSG_SPLASH_WEBSITE1 " vertex3dprinter.eu"
         #define MSG_SPLASH_WEBSITE2 "    velleman.eu"
 
         #define MSG_SPLASH_NAME_SMALL "VERTEX 3D PRINTER"
-        #define MSG_SPLASH_FIRMWARE_SMALL "M:1.0 V:1.4 HDS:1"
+        #define MSG_SPLASH_FIRMWARE_SMALL "M:1.0 V:1.4 NE:1"
         #define MSG_SPLASH_WEBSITE1_SMALL "     K8400.eu"
         #define MSG_SPLASH_WEBSITE2_SMALL "   velleman.eu"
 
